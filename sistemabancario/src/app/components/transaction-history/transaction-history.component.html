@@ -1,0 +1,16 @@
+<app-header></app-header>
+<section>
+    <div class="hero-container">
+       <div class="about-items">
+            <span *ngFor="let transaction of transactions">
+                <div class="card">
+                    <h3>{{transaction?.descripcion}}</h3>
+                    <p>Fecha: {{transaction?.fecha | date}}</p>
+                    <p>Monto: {{transaction?.monto | currency}}</p>
+                    <p>Tipo: {{transaction?.tipoTransacc}}</p>
+                    <p>Comprobante: {{transaction?.id}}</p>
+                </div>
+            </span>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+<app-header></app-header>
+<section>
+    <div class="hero-container">
+        <form [formGroup]="TransacForm" (ngSubmit)="send()">
+            <label for="monto">Valor de la compra:</label>
+            <input id="monto" type="number" formControlName="monto">
+            <button type="submit">Enviar</button>
+        </form>
+        <div *ngIf="this.isOk">
+            <h3>{{ mensaje }}</h3>
+            <pre>Nuevo Saldo: {{ nuevoSaldo | currency }}</pre>
+        </div>
+    </div>
+</section>

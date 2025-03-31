@@ -1,0 +1,50 @@
+header {
+    background-color: white;
+}
+
+.header-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+li {
+    font-size: 17px;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding-inline: 20px;
+    border-radius: 20px; /* Hace el recuadro más redondeado */
+}
+
+#tramites {
+    background-color: #2C2A29;
+    color: white;
+    height: 67.5px;
+}
+
+#get-started {
+    background-color: #fdda24;
+    height: 67.5px;
+}

@@ -1,0 +1,25 @@
+section {
+    margin: 0 auto;
+    background-color: #f3f3f5;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: "Charlie Text", sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 20px;
+    width: 58.3333%;
+    margin-bottom: 40px;
+}

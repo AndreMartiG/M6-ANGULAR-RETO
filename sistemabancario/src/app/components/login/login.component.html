@@ -1,0 +1,25 @@
+<body>
+    <div class="login-container">
+        <img src="assets/images/il-configure-face-id-1.svg" alt="login">
+        <form class="form-container" [formGroup]="loginForm" (ngSubmit)="submit()">
+            <h1>Inicia sesión para continuar</h1>
+            <div class="input-container border">
+                <i class="bi bi-person-fill icon-size"></i>
+                <input type="email" placeholder="correo electronico" formControlName="email">
+            </div>
+            <div class="input-container border">
+                <i class="bi bi-file-lock2 icon-size"></i>
+                <input type="password" placeholder="contraseña" formControlName="password">
+            </div>
+            <label class="checkbox-container">
+                <input type="checkbox" checked="checked" name="remember"> Recuérdame
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </label>
+            <button type="submit">Iniciar sesión</button>
+            <div class="checkbox-container">
+                <span>¿No tienes una cuenta?</span>
+                <a href="#">Regístrate</a>
+            </div>
+        </form>
+    </div>
+</body>

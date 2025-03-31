@@ -1,0 +1,20 @@
+<section>
+    <div class="hero-container">
+        <div>
+            <h3>Bienvendido</h3>
+            <h2>Tu centro para la gestión de tus productos</h2>
+            <p>Elige la acción que quieres realizar</p>
+        </div>
+        
+        <div class="about-items">
+            <button (click)="getBalance()"><a>Consultar Saldo</a></button>
+            <button (click)="makeDeposit('Deposito desde sucursal')"><a>Deposito desde sucursal</a></button>
+            <button (click)="makeDeposit('Deposito desde cajero automatico')"><a>Deposito desde cajero automatico</a></button>
+            <button (click)="makeTransfer('Deposito a otra cuenta')"><a>Deposito a otra cuenta</a></button>
+            <button (click)="makePurchase('Compra en establecimiento fisico')"><a>Compra en establecimiento fisico</a></button>
+            <button (click)="makePurchase('Compra en pagina web')"><a>Compra en pagina web</a></button>
+            <button (click)="makeWithdrawal('Retiro en cajero')"><a>Retiro en cajero</a></button>
+            <button (click)="getHistory()"><a>Consultar Ultimas Transacciones</a></button>
+        </div>
+    </div>
+</section>
